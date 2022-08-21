@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>MY-CODING_PLAN</title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8"> 
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<h1>
+		<a href="p1.html">My-Coding-Plan</a>
+		</h1>	
+		<div id="grid">	
+	<ol>
+		<li><a href="WEB1.html">WEB1</a></li>
+		<li><a href="WEB2CSS.html">WEB2-CSS</a></li>
+		<li><a href="WEB2JavaScript.html">WEB2-JavaScript</a></li>
+		<li><a href="Python.html">Python</a></li>
+		<li><a href="DataStructure.html">자료구조</a></li>
+		<li><a href="Algorithm.html">알고리즘</a></li>
+		</ol>	
+	<div id="article">
+<h2>
+	WEB2-CSS
+		</h2>
+<p>CSS 등장 이전의 상황<br>
+예를 들어서 내가 웹사이트의 어떤 글자의 색깔을 변경하고 싶다면 pont라는 태그를 사용해서 색을 변경 할 수 있었음. <br>
+ 근데 만약 바꿔야할 글자가 1억개라면? 태그를 ㅅ발 ㅈ나게 많이 쓰고 변경해야됨 그래서 사람들이 이것을 획기적으로 쉽게 바꿀 수 있게하는 기술을 고안하기 시작함	</p>
+
+<p>CSS의 등장<br>
+css가 이것을 가능하게 해줌 style태그 안에 있는 코드는 html이 아닌 css로 읽으라고 웹 브라우저에게 명령함 그리고 단순한 코드 하나를 변경함으로써 1억개의 글자를 다 바꿀 수 있게 해줌 ㅅ발 혁신이였던거임 그리고 css는 첫째, html이 너무나 중요하기 떄문에(가장 중요한 정보 전달의 역할을 하기 때문-시각 장애인은 디자인은 못보지만 적혀있는 내용은 볼 수 있다.) html이 정보에 전념하게 하기 위해서 html로부터 디자인에 대한 기능을 뺏어왔다. 둘째, css를 통해서 디자인 하는 것이 html을 통해서 디자인 하는 것  보다 훨씬 더 효율적이기 때문에 css가 도입되었다.	</p> 
+
+<p>혁명적 변화(CSS의 기본 문법)<br>
+style=" " 는 html의 속성 이 style란 속성은 그 값으로 반드시 css의 효과가 들어온다.<br>
+a {  선택자에게 지정될 효과(declaration선언)   } 코드 웹페이지에 우리가 주고 싶은 효과를 누구에게 줄 것인지 선택한다<br>
+a는 (선택자, selector)--------웹 페이지에 있는 모든 a태그를 선택한다.<br>
+웹페이지 안에 CSS를 삽입하는 두가지 방법<br>
+1.style태그<br>
+2.style속성<br>
+text-decoration:none;<br>
+세미콜론은 디스크립션의 시작과 끝을 구분한다.<br>
+하나의 선택자에 대해서 여러 개의 효과를 지정할 수 있는데 그 효과들을 세미콜론으로 구분한다.<br>
+a {<br>
+		(property)color:(value)black; <br>
+			text-decoration:none;<br>
+		}<br>
+	</p>
+<p>CSS 속성을 스스로 알아내는 방법<br>
+
+a {<br>
+		(property)color:(value)black; <br>
+			text-decoration:none;<br>
+		}<br>
+
+	</p>
+<p>CSS 선택자를 스스로 알아내는 방법.  <br>
+선택자끼리의 우선순위가 동일하면 가장 최근에 명령한(가장 마지막에 등장하는) 선택자가 이긴다. <br>
+그러나 id선택자와 class선택자가 붙으면 id선택자가 이긴다.<br>
+class선택자와 태그 선택자가 붙으며 class선택자가 이긴다.<br>
+class에 해당하는 class선택자는 앞에 .을 붙인다.<br>
+id에 해당하는 id선택자는 앞에 #을 붙인다.<br>
+원리:구체적인 것이 포괄적인 것보다 우선순위가 높다. <br>
+먼저 전체적인 디자인을 태그 선택자를 통해서 해놓고 그 다음 구체적인 것들을 설정할 때 id선택자를 통해서 예외를 두어 선택해 나갈 수 있기 때문이다.<br>
+클래스 선택자는 태그 선택자 보다는 우서순위가 높지만 id선택자 보다는 우선순위가 낮다.	</p>
+
+<p>박스모델<br>
+block levle element - 화면 전체를 쓰는 것<br>
+inline element - 자기 크기만 갖는 것<br>
+콘텐츠 크기 지정<br>
+폭은 width 높이는 height값을 지정하면 된다<br>
+content-paddding-border-margin	</p>
+
+<p>그리드<br>
+가로-row<br>
+세로-column<br>
+아무런 의미가 없고 단지 디자인의 용도로만 쓰는 태그 2개 <br>
+div--block level element<br>
+span-inline element<br>
+태그 두개를 나란히 놓기 위해서 우리는 grid를 사용한다. 그것을 하기 위해서 우리는 두 개의 태그를 감싸는 부모태그가 필요하다.<br>
+fr-나머지 공간을 전부 사용할 수 있게 한다. 자동으로 커지고 자동으로 작아진다.<br>
+#grid ol{<br>
+			padding-left:33px;<br>
+		}<br>
+grid밑에 있는 ol태그에 대해서만 특성을 부여하게 한다. 	</p>
+
+<p>caniuse.com --- 현재 웹브라우저들이 얼마나 그 기술을 채택하고 있는지 표시해주는 사이트.<br>
+	</p>
+
+<p>**************반응형 디자인(미디어 쿼리)************<br>
+화면의 크기에 따라서 웹 페이지의 각 요소들이 반응해서 동작하게 된다.<br>
+screen width이 800작다는 것을 아래와 같이 표현한다.<br>
+@media(max-width:800px)<br>
+				  {<br>
+
+}<br>
+	</p>
+
+<p>CSS 코드의 재사용<br>
+css코드를 모든 웹사이트에 삽입할 필요 없이 하나의 파일로 빼서 만드는 것이 더욱 효과적이고 경제적이다.<br>
+	</p>
+<p>수업을 마치며	</p>
+			</div>
+		</div>
+		
+		</body>
+</html>
